@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -10,19 +11,27 @@ int main()
     // 入力
     cout << "体重(kg)を入力して下さい：";
     cin >> weight;
-    cout << "身長(m)を入力して下さい：";
+    cout << "身長(cm)を入力して下さい：";
     cin >> height;
     // 演算
+    height /= 100;
     bmi = weight / height / height;
     // 出力
-    cout << bmi << endl;
+    cout << "あなたのBMIは" << fixed << setprecision(1) << bmi << "です。" << endl;
+    cout << "18.5 ~ 25.0が標準です。" << endl;
 
     return 0;
 }
 
-/** 実行結果
- * % ./list_4-2_cin-cout-bmi
- * 体重(kg)を入力して下さい：64.0
- * 身長(m)を入力して下さい：1.7
- * 22.1453%
+/**
+ * << fixed << setprecision() << で小数点以下の桁数を設定し固定
+ * fixed と setprecision を使うにはヘッダファイル iomanip が必要
+ * BMIの計算は、単位が kg / m / m
+ *
+ * 実行結果
+ * % ./bmi
+ * 体重(kg)を入力して下さい：64
+ * 身長(cm)を入力して下さい：170
+ * あなたのBMIは22.1です。
+ * 18.5 ~ 25.0が標準です。
  */
