@@ -7,6 +7,7 @@ int main()
     double height;
     double weight;
     double bmi;
+    string judgement;
 
     // 入力
     cout << "体重(kg)を入力して下さい：";
@@ -19,6 +20,10 @@ int main()
     // 出力
     cout << "あなたのBMIは" << fixed << setprecision(1) << bmi << "です。" << endl;
     cout << "18.5 ~ 25.0が標準です。" << endl;
+
+    // 三項演算子
+    judgement = bmi >= 25.0 ? "肥満です。" : "肥満ではありません。";
+    cout << judgement << endl;
 
     return 0;
 }
