@@ -12,7 +12,8 @@ int main()
 {
   cout << "Hello, World!" << endl;
   return 0;
-}```
+}
+```
 
 - コンパイル
   - `% g++ hello.cpp ` -> a.out
