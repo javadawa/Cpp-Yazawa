@@ -31,7 +31,7 @@ int main()
 - 定数名
   - BMI, STD_BMI
     - 定数はマジックナンバーを避ける用途でも使う
-      - const int STD_BMI
+      - `const int STD_BMI`
 
 - クラス名
   - Human
@@ -41,7 +41,7 @@ int main()
   - double: 倍精度浮動小数点数, 8 byte
   - bool : 真偽値（名称は研究者の名前由来）, 1 byte
   - char : 1 byte
-  - string : string型はクラス。使用する場合は「#include <string>」が必要
+  - string : string型はクラス。使用する場合は`#include <string>`が必要
 
 - literal
   - （文字通りの）直接数値で示されたデータ
@@ -54,7 +54,7 @@ int main()
   - int と double の混在 -> double
 
 - 「変数の値が１０以上２０以下」
-  - a >= 10 && a <= 20
+  - `a >= 10 && a <= 20`
 
 - Iterative Syntax 「while, do while, for」
   - プログラムを作る人の感覚に合わせて使い分ける
