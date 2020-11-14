@@ -11,7 +11,7 @@ int main()
     cout << "テレビのチャンネル番号を入力して下さい：";
     cin >> channel;
 
-    // テレビ居の番号をfeeに格納する
+    // テレビ局の番号をfeeに格納する
     switch (channel)
     {
     case 1:

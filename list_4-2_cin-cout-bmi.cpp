@@ -33,11 +33,13 @@ int main()
  * << fixed << setprecision() << で小数点以下の桁数を設定し固定
  * fixed と setprecision を使うにはヘッダファイル iomanip が必要
  * BMIの計算は、単位が kg / m / m
+ *      よって`height =/ 100`
  *
  * 実行結果
- * % ./bmi
+ * Cpp-Yazawa % ./a.out
  * 体重(kg)を入力して下さい：64
  * 身長(cm)を入力して下さい：170
  * あなたのBMIは22.1です。
  * 18.5 ~ 25.0が標準です。
+ * 肥満ではありません。
  */
