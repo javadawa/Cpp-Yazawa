@@ -4,7 +4,7 @@
   - 分岐や繰り返しの流れを表記する構文
   - 1つのプログラムを関数やクラスに分ける構文
 
-```
+```c++
 #include <iostream>
 using namespace std;
 
